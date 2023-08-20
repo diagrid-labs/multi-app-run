@@ -1,0 +1,24 @@
+version: 1
+common: # optional section for variables shared across apps
+  resourcesPath: ./resources/
+apps:
+  - appID: subscriber1
+    appDirPath: ./src/subscriber1/
+    appPort: 5101
+    appProtocol: http
+    command: ["npm", "start"]
+    appLogDestination: fileAndConsole
+    daprdLogDestination: file
+  - appID: subscriber2
+    appDirPath: ./src/subscriber2/
+    appPort: 5102
+    appProtocol: http
+    command: ["npm", "start"]
+    appLogDestination: fileAndConsole
+    daprdLogDestination: file
+  - appID: publisher
+    appDirPath: ./src/publisher/
+    appProtocol: http
+    command: ["npm", "start"]
+    appLogDestination: fileAndConsole
+    daprdLogDestination: file
