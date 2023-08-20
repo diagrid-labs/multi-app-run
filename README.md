@@ -5,8 +5,8 @@ This is a sample project to demonstrate how to run multiple Dapr apps with a sin
 This repository contains three Node.js applications:
 
 - `/src/publisher` - publishes messages to a topic named `orders`.
-- `/src/subscirber1` - subscribes to the `orders` topic and logs the received messages.
-- `/src/subscirber2` - subscribes to the `orders` topic and logs the received messages.
+- `/src/subscriber1` - subscribes to the `orders` topic and logs the received messages.
+- `/src/subscriber2` - subscribes to the `orders` topic and logs the received messages.
 
 All three Dapr applications use a pubsub component named `orderpubsub` which uses a local Redis instance, see the [pubsub.yaml](./resources/pubsub.yaml) component file.
 
@@ -96,3 +96,14 @@ The output should be similar to this:
 == APP - subscriber2 == Subscriber 2 received: {"orderId":10}
 Exited App successfully
 ```
+
+Note that the application logs are shown in the console as well as the `.dapr/logs` folder of each Node application. The Dapr logs are only present in the `.dapr/logs` folder.
+
+## Resources
+
+For more info on multi-app run, see the [Dapr documentation](https://docs.dapr.io/developing-applications/local-development/multi-app-dapr-run/).
+
+## More information
+
+Any questions or comments about this sample? Join the [Dapr discord](https://bit.ly/dapr-discord) and contact me (@marcduiker).
+Have you made something with Dapr? Post a message in the `#show-and-tell` channel, we love to see your creations!
