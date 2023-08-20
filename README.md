@@ -4,7 +4,7 @@ This is a sample project to demonstrate how to run multiple Dapr apps with a sin
 
 This repository contains three Node.js applications:
 
-- `/src/publisher` - publishes messages to a topic named `orders`.
+- `/src/publisher` - publishes 10 messages to a topic named `orders`.
 - `/src/subscriber1` - subscribes to the `orders` topic and logs the received messages.
 - `/src/subscriber2` - subscribes to the `orders` topic and logs the received messages.
 
@@ -13,14 +13,15 @@ All three Dapr applications use a pubsub component named `orderpubsub` which use
 ## Prerequisites
 
 1. Linux or macOS (Windows is not yet supported)
-2. [Node](https://nodejs.org/en/download)
-3. [Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
+2. [Nodejs](https://nodejs.org/en/download)
+3. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+4. [Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
 
 ## Running the demo
 
-1. Run `npm install` in each of the Node application folders.
+1. Run `npm run install-all` in the root of this repository to install the Node modules for the three apps.
 
-2. Run this command in the root of this repository:
+2. Run this command in the root of this repository to start the Dapr runtime and the three apps:
 
 ```bash
 dapr run -f .

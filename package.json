@@ -1,0 +1,10 @@
+{
+    "name": "root",
+    "version": "1.0.0",
+    "description": "Use this to install dependencies for all the Dapr services",
+    "scripts": {
+        "install-all": "(cd ./src/publisher && npm install) & (cd ./src/subscriber1 && npm install) & (cd ./src/subscriber2 && npm install)"
+    },
+    "author": "Marc Duiker",
+    "license": "ISC"
+}
