@@ -27,7 +27,7 @@ All three Dapr applications use a pubsub component named `orderpubsub` which use
 dapr run -f .
 ```
 
-The command above will read the [dapr.yaml](./dapr.yaml) file that contains the multi-app run configuration.
+The command above will read the [dapr.yaml](./dapr.yaml) multi-app run template file that contains the multi-app run configuration.
 
 The output should be similar to this:
 
