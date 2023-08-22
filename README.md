@@ -8,7 +8,9 @@ This repository contains three Node.js applications:
 - `/src/subscriber1` - subscribes to the `orders` topic and logs the received messages.
 - `/src/subscriber2` - subscribes to the `orders` topic and logs the received messages.
 
-All three Dapr applications use a pubsub component named `orderpubsub` which uses a local Redis instance, see the [pubsub.yaml](./resources/pubsub.yaml) component file.
+![Dap publish/subscribe](./media/dapr-pubsub.png)
+
+All three Dapr applications use a pubsub component named `orderpubsub` which uses a local Redis container as the message broker. See the [pubsub.yaml](./resources/pubsub.yaml) component file for the details.
 
 ## Prerequisites
 
