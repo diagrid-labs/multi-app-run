@@ -100,7 +100,7 @@ The output should be similar to this:
 Exited App successfully
 ```
 
-Note that the application logs are shown in the console as well as the `.dapr/logs` folder of each Node application. The Dapr logs are only present in the `.dapr/logs` folder.
+> Note that the application logs are shown in the console as well as the `.dapr/logs` folder of each Node application. The Dapr logs are only present in the `.dapr/logs` folder.
 
 ## Resources
 
